@@ -1,8 +1,8 @@
-function viewoverlay(){
+function viewoModel(){
     
     document.getElementById("overlay").style.display = "block";
 }
-function closeoverlay1(){
+function closeModelByOverlay(){
     
    var modal = document.getElementById('overlay');
 
@@ -13,7 +13,7 @@ window.onclick = function(event) {
 }
 }
 
-function closeoverlay2()
+function closeModelByBtn()
 {
     document.getElementById("overlay").style.display = "none";
 
