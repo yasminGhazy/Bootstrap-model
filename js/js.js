@@ -1,10 +1,10 @@
-function viewoModel(){
+function viewoModal(){
     
-    document.getElementById("overlay").style.display = "block";
+    document.getElementById("modal").style.display = "block";
 }
-function closeModelByOverlay(){
+function closeModalByOverlay(){
     
-   var modal = document.getElementById('overlay');
+   var modal = document.getElementById('modal');
 
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -13,8 +13,8 @@ window.onclick = function(event) {
 }
 }
 
-function closeModelByBtn()
+function closeModalByBtn()
 {
-    document.getElementById("overlay").style.display = "none";
+    document.getElementById("modal").style.display = "none";
 
 }
