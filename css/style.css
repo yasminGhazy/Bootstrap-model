@@ -1,4 +1,4 @@
-#modal {
+#modal-login ,#modal-reg{
     position: fixed;
     display: none;
     width: 100%;

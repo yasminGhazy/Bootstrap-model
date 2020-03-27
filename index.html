@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>modal</title>
+    <title>Modal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,16 +12,34 @@
 
 <body>
     <h1>Test</h1>
-    <button type="button" class="" onclick="viewoModal()">
-        play
+    <button type="button" class="view" onclick="viewoModal()" data-target="modal-login">
+        log in
     </button>
-    <div id="modal" onclick="closeModalByOverlay()">
+ 
+    <div id="modal-login" onclick="closeModalByOverlay()" class="close" data-target="modal-login">
         <div class="modal-content">
 
             <h3>some text</h3>
-            <button type="button" class="" onclick="closeModalByBtn()">Close</button>
+            <button type="button" class="close" onclick="closeModalByBtn()" data-target="modal-login" >Close</button>
         </div>
     </div>
+
+    <button type="button" class="view" onclick="viewoModal()" data-target="modal-reg">
+        register
+    </button>
+
+    <div id="modal-reg" onclick="closeModalByOverlay()" class="close" data-target="modal-reg">
+        <div class="modal-content">
+
+            <h3>Register</h3>
+            <p>some text some lap lap</p>
+            <button type="button" class="close" onclick="closeModalByBtn()" data-target="modal-reg" >Close</button>
+        </div>
+    </div>
+
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
     <script src="js/js.js"></script>
 </body>
 
