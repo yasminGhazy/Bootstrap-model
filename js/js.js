@@ -31,12 +31,40 @@ window.onclick = function(event) {
  }
 }
 }*/
+var view = document.querySelectorAll(".view");
+var close = document.querySelectorAll(".close");
+var value;
+for (var i = 0; i < view.length; i++) {
+  value =view[i].dataset.target;
+  view[i].addEventListener("click", function() {
+    viewModel(value);
+  });
+}
+
+for (var i = 0; i < close.length; i++) {
+  value =view[i].dataset.target;
+  close[i].addEventListener("click", function(){
+    closeModel(value);
+  });
+
+}
+function viewModel(v) {
+  document.getElementById(v).style.display = "block";
+
+}
+function closeModel(v) {
+  document.getElementById(v).style.display = "none";
+
+}
+/*
 window.onclick = function (event) {
   var view = document.querySelectorAll(".view");
   var close =document.querySelectorAll(".close");
   for (var i = 0; i < view.length; i++) {
+
     if (view[i] == event.target) {
       document.getElementById(view[i].dataset.target).style.display = "block"
+
       break;
     }
   }
@@ -46,7 +74,7 @@ window.onclick = function (event) {
       break;
     }
   }
-}
+}*/
 
 /*
 var view = document.querySelectorAll(".view");
