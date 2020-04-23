@@ -16,7 +16,7 @@ elem('.close', 'click', function (e) {
   
 */
 
-class modal {
+class Modal {
 run() {
     let viewSelector =document.querySelectorAll('.view');
     for (let i = 0; i < viewSelector.length; i++) {
@@ -32,5 +32,5 @@ run() {
     }
   }
 }
-let myModal = new modal();
+let myModal = new Modal();
 myModal.run();
